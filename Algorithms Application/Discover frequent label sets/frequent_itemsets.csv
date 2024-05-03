@@ -1,0 +1,21 @@
+support,itemsets
+0.10344827586206896,frozenset({'r: duplicate'})
+0.10344827586206896,frozenset({'has reproducible steps'})
+0.10344827586206896,frozenset({'found in release: 3.22'})
+0.10344827586206896,frozenset({'found in release: 3.19'})
+0.06896551724137931,frozenset({'framework'})
+0.2413793103448276,frozenset({'in triage'})
+0.41379310344827586,frozenset({'autosubmit'})
+0.4827586206896552,frozenset({'engine'})
+0.10344827586206896,"frozenset({'found in release: 3.22', 'has reproducible steps'})"
+0.10344827586206896,"frozenset({'found in release: 3.19', 'found in release: 3.22'})"
+0.10344827586206896,"frozenset({'found in release: 3.19', 'has reproducible steps'})"
+0.10344827586206896,"frozenset({'found in release: 3.19', 'found in release: 3.22', 'has reproducible steps'})"
+0.06896551724137931,"frozenset({'framework', 'found in release: 3.19'})"
+0.06896551724137931,"frozenset({'framework', 'found in release: 3.22'})"
+0.06896551724137931,"frozenset({'framework', 'has reproducible steps'})"
+0.06896551724137931,"frozenset({'framework', 'found in release: 3.19', 'found in release: 3.22'})"
+0.06896551724137931,"frozenset({'framework', 'found in release: 3.19', 'has reproducible steps'})"
+0.06896551724137931,"frozenset({'framework', 'found in release: 3.22', 'has reproducible steps'})"
+0.06896551724137931,"frozenset({'framework', 'found in release: 3.19', 'found in release: 3.22', 'has reproducible steps'})"
+0.3448275862068966,"frozenset({'autosubmit', 'engine'})"

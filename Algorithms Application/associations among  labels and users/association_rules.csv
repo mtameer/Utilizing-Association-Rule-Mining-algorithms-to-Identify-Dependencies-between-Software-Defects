@@ -1,0 +1,74 @@
+antecedents,consequents,support,confidence
+frozenset({'team-engine'}),frozenset({'P2'}),0.010023511941591387,0.5483264385107183
+frozenset({'a: tests'}),frozenset({'framework'}),0.015997745053554977,0.5752781211372064
+frozenset({'a: text input'}),frozenset({'framework'}),0.027430598523285072,0.7879146919431279
+frozenset({'autosubmit'}),frozenset({'engine-flutter-autoroll'}),0.03535041042775234,0.53747256193164
+frozenset({'c: proposal'}),frozenset({'c: new feature'}),0.01977890525100029,0.5792228709482585
+frozenset({'c: proposal'}),frozenset({'framework'}),0.017977698029671797,0.5264747332393799
+frozenset({'d: api docs'}),frozenset({'framework'}),0.014354659076846925,0.7185134205092911
+frozenset({'team-engine'}),frozenset({'engine'}),0.014389033260460064,0.7871380218127115
+frozenset({'triaged-engine'}),frozenset({'engine'}),0.013220311017613331,0.8393714535137494
+frozenset({'f: cupertino'}),frozenset({'framework'}),0.01678147643993455,0.9260242792109256
+frozenset({'f: material design'}),frozenset({'framework'}),0.08139119195919096,0.9577704069250059
+frozenset({'team-design'}),frozenset({'f: material design'}),0.01354342834357684,0.8502373759171342
+frozenset({'triaged-design'}),frozenset({'f: material design'}),0.012766571793919894,0.8537931034482759
+frozenset({'f: scrolling'}),frozenset({'framework'}),0.01990952714873022,0.9467146126185029
+frozenset({'has reproducible steps'}),frozenset({'framework'}),0.03327420973751873,0.5577964734355192
+frozenset({'team-design'}),frozenset({'framework'}),0.015262137524233799,0.9581355200690548
+frozenset({'team-framework'}),frozenset({'framework'}),0.016038994073890745,0.9557558377714052
+frozenset({'triaged-design'}),frozenset({'framework'}),0.01446465646440897,0.9673563218390805
+frozenset({'triaged-framework'}),frozenset({'framework'}),0.015152140136671753,0.9709251101321585
+frozenset({'in triage'}),frozenset({'waiting for customer response'}),0.020012649699569635,0.506348930248739
+frozenset({'jonahwilliams'}),frozenset({'tool'}),0.014340909403401669,0.5531689207106868
+frozenset({'triaged-design'}),frozenset({'team-design'}),0.014945895034992919,0.9995402298850575
+frozenset({'team-design'}),frozenset({'triaged-design'}),0.014945895034992919,0.9382822615451014
+frozenset({'triaged-engine'}),frozenset({'team-engine'}),0.015743376094817747,0.9995635093845482
+frozenset({'team-engine'}),frozenset({'triaged-engine'}),0.015743376094817747,0.8612260248213613
+frozenset({'triaged-framework'}),frozenset({'team-framework'}),0.015599004523642563,0.9995594713656387
+frozenset({'team-framework'}),frozenset({'triaged-framework'}),0.015599004523642563,0.929537074969275
+"frozenset({'framework', 'P2'})",frozenset({'has reproducible steps'}),0.014739649933314085,0.5058990089664936
+"frozenset({'has reproducible steps', 'P2'})",frozenset({'framework'}),0.014739649933314085,0.5207675491863007
+"frozenset({'framework', 'a: text input'})",frozenset({'f: material design'}),0.014945895034992919,0.5448621553884712
+"frozenset({'f: material design', 'a: text input'})",frozenset({'framework'}),0.014945895034992919,0.9709691826708352
+"frozenset({'engine-flutter-autoroll', 'engine'})",frozenset({'autosubmit'}),0.016994596378336016,0.6354755784061697
+"frozenset({'autosubmit', 'engine'})",frozenset({'engine-flutter-autoroll'}),0.016994596378336016,0.969031752254018
+"frozenset({'c: new feature', 'c: proposal'})",frozenset({'framework'}),0.010470376328562197,0.5293708724365659
+"frozenset({'framework', 'c: proposal'})",frozenset({'c: new feature'}),0.010470376328562197,0.5824091778202677
+"frozenset({'triaged-engine', 'engine'})",frozenset({'team-engine'}),0.013213436180890704,0.999479979199168
+"frozenset({'triaged-engine', 'team-engine'})",frozenset({'engine'}),0.013213436180890704,0.8393013100436681
+"frozenset({'engine', 'team-engine'})",frozenset({'triaged-engine'}),0.013213436180890704,0.9182990922121357
+frozenset({'triaged-engine'}),"frozenset({'engine', 'team-engine'})",0.013213436180890704,0.8389349628982976
+frozenset({'team-engine'}),"frozenset({'triaged-engine', 'engine'})",0.013213436180890704,0.7228281308762693
+"frozenset({'f: material design', 'has reproducible steps'})",frozenset({'framework'}),0.015269012360956428,0.9801412180052956
+"frozenset({'framework', 'team-design'})",frozenset({'f: material design'}),0.013117188466773915,0.8594594594594596
+"frozenset({'f: material design', 'team-design'})",frozenset({'framework'}),0.013117188466773915,0.968527918781726
+frozenset({'team-design'}),"frozenset({'framework', 'f: material design'})",0.013117188466773915,0.823478636167458
+"frozenset({'triaged-design', 'f: material design'})",frozenset({'framework'}),0.012443454467956387,0.9746903607969845
+"frozenset({'triaged-design', 'framework'})",frozenset({'f: material design'}),0.012443454467956387,0.8602661596958175
+frozenset({'triaged-design'}),"frozenset({'f: material design', 'framework'})",0.012443454467956387,0.8321839080459771
+"frozenset({'triaged-design', 'team-design'})",frozenset({'f: material design'}),0.012759696957197267,0.8537258509659613
+"frozenset({'triaged-design', 'f: material design'})",frozenset({'team-design'}),0.012759696957197267,0.9994614970382337
+"frozenset({'f: material design', 'team-design'})",frozenset({'triaged-design'}),0.012759696957197267,0.9421319796954315
+frozenset({'triaged-design'}),"frozenset({'f: material design', 'team-design'})",0.012759696957197267,0.8533333333333334
+frozenset({'team-design'}),"frozenset({'triaged-design', 'f: material design'})",0.012759696957197267,0.8010358221838585
+"frozenset({'triaged-design', 'team-design'})",frozenset({'framework'}),0.014457781627686343,0.9673413063477462
+"frozenset({'triaged-design', 'framework'})",frozenset({'team-design'}),0.014457781627686343,0.9995247148288974
+"frozenset({'framework', 'team-design'})",frozenset({'triaged-design'}),0.014457781627686343,0.9472972972972974
+frozenset({'triaged-design'}),"frozenset({'framework', 'team-design'})",0.014457781627686343,0.966896551724138
+frozenset({'team-design'}),"frozenset({'triaged-design', 'framework'})",0.014457781627686343,0.907639188605956
+"frozenset({'framework', 'triaged-framework'})",frozenset({'team-framework'}),0.015145265299949126,0.9995462794918331
+"frozenset({'framework', 'team-framework'})",frozenset({'triaged-framework'}),0.015145265299949126,0.9442777539648521
+"frozenset({'triaged-framework', 'team-framework'})",frozenset({'framework'}),0.015145265299949126,0.9709122961657118
+frozenset({'triaged-framework'}),"frozenset({'framework', 'team-framework'})",0.015145265299949126,0.9704845814977973
+frozenset({'team-framework'}),"frozenset({'framework', 'triaged-framework'})",0.015145265299949126,0.902498975829578
+"frozenset({'triaged-design', 'team-design', 'f: material design'})",frozenset({'framework'}),0.012436579631233758,0.9746767241379309
+"frozenset({'triaged-design', 'team-design', 'framework'})",frozenset({'f: material design'}),0.012436579631233758,0.8601997146932953
+"frozenset({'triaged-design', 'f: material design', 'framework'})",frozenset({'team-design'}),0.012436579631233758,0.9994475138121546
+"frozenset({'f: material design', 'team-design', 'framework'})",frozenset({'triaged-design'}),0.012436579631233758,0.9481132075471698
+"frozenset({'triaged-design', 'team-design'})","frozenset({'f: material design', 'framework'})",0.012436579631233758,0.8321067157313707
+"frozenset({'triaged-design', 'f: material design'})","frozenset({'framework', 'team-design'})",0.012436579631233758,0.9741518578352181
+"frozenset({'triaged-design', 'framework'})","frozenset({'f: material design', 'team-design'})",0.012436579631233758,0.8597908745247148
+"frozenset({'f: material design', 'team-design'})","frozenset({'triaged-design', 'framework'})",0.012436579631233758,0.9182741116751268
+"frozenset({'framework', 'team-design'})","frozenset({'triaged-design', 'f: material design'})",0.012436579631233758,0.8148648648648649
+frozenset({'triaged-design'}),"frozenset({'f: material design', 'team-design', 'framework'})",0.012436579631233758,0.8317241379310345
+frozenset({'team-design'}),"frozenset({'triaged-design', 'f: material design', 'framework'})",0.012436579631233758,0.7807509710832974

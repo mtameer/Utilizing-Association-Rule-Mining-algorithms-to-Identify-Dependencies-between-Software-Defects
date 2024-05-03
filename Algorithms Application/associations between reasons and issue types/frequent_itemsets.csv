@@ -1,0 +1,103 @@
+Itemset,Support
+"2227917456,not_planned",1
+"2227917456,r: duplicate",1
+"not_planned,r: duplicate",3
+"not_planned,2227681819",1
+"not_planned,2227430764",1
+"2227681819,r: duplicate",1
+"r: duplicate,2227430764",1
+"2227892931,a: text input",1
+"2227892931,framework",1
+"has reproducible steps,2227892931",1
+"found in release: 3.19,2227892931",1
+"2227892931,team-text-input",1
+"2227892931,found in release: 3.22",1
+"framework,a: text input",1
+"has reproducible steps,a: text input",1
+"found in release: 3.19,a: text input",1
+"team-text-input,a: text input",1
+"a: text input,found in release: 3.22",1
+"has reproducible steps,framework",2
+"found in release: 3.19,framework",2
+"team-text-input,framework",1
+"framework,found in release: 3.22",2
+"framework,2227611346",1
+"f: material design,framework",1
+"team-design,framework",1
+"found in release: 3.19,has reproducible steps",3
+"has reproducible steps,team-text-input",1
+"has reproducible steps,found in release: 3.22",3
+"has reproducible steps,2227611346",1
+"f: material design,has reproducible steps",1
+"team-design,has reproducible steps",1
+"2226718392,has reproducible steps",1
+"package,has reproducible steps",1
+"has reproducible steps,p: go_router",1
+"team-go_router,has reproducible steps",1
+"found in release: 3.19,team-text-input",1
+"found in release: 3.19,found in release: 3.22",3
+"found in release: 3.19,2227611346",1
+"f: material design,found in release: 3.19",1
+"team-design,found in release: 3.19",1
+"2226718392,found in release: 3.19",1
+"package,found in release: 3.19",1
+"found in release: 3.19,p: go_router",1
+"found in release: 3.19,team-go_router",1
+"team-text-input,found in release: 3.22",1
+"2227611346,found in release: 3.22",1
+"f: material design,found in release: 3.22",1
+"team-design,found in release: 3.22",1
+"2226718392,found in release: 3.22",1
+"package,found in release: 3.22",1
+"p: go_router,found in release: 3.22",1
+"team-go_router,found in release: 3.22",1
+"in triage,2227758543",1
+"2227432736,in triage",1
+"2227298180,in triage",1
+"2226957693,in triage",1
+"waiting for customer response,in triage",1
+"in triage,2226818485",1
+"2226810056,in triage",1
+"2226701604,in triage",1
+"f: material design,2227611346",1
+"team-design,2227611346",1
+"f: material design,team-design",1
+"autosubmit,2227563983",1
+"autosubmit,2227545645",1
+"engine,autosubmit",10
+"autosubmit,2227377787",1
+"autosubmit,2227276336",1
+"2227159688,autosubmit",1
+"2226880831,autosubmit",1
+"autosubmit,2226848833",1
+"autosubmit,2226623391",1
+"autosubmit,2226607608",1
+"autosubmit,2226576464",1
+"team,autosubmit",1
+"team-infra,autosubmit",1
+"autosubmit,2226554171",1
+"2226547931,autosubmit",1
+"engine,2227545645",1
+"engine,2227377787",1
+"engine,2227276336",1
+"2227159688,engine",1
+"2226880831,engine",1
+"engine,2226874249",1
+"engine,2226848833",1
+"engine,2226791910",1
+"2226770461,engine",1
+"engine,2226653226",1
+"engine,2226623391",1
+"engine,2226607608",1
+"engine,2226554171",1
+"2226547931,engine",1
+"waiting for customer response,2226957693",1
+"package,2226718392",1
+"2226718392,p: go_router",1
+"2226718392,team-go_router",1
+"package,p: go_router",1
+"package,team-go_router",1
+"team-go_router,p: go_router",1
+"team,2226576464",1
+"team-infra,2226576464",1
+"team-infra,team",1

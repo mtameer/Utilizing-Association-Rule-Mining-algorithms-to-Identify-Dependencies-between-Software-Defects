@@ -1,0 +1,121 @@
+support,itemsets
+0.02353256610155509,frozenset({'Hixie'})
+0.016073368257503884,frozenset({'P0'})
+0.022150723920306894,frozenset({'P1'})
+0.0881422816208115,frozenset({'P2'})
+0.04230774519105171,frozenset({'P3'})
+0.015159014973394383,frozenset({'a: accessibility'})
+0.017015220888503896,frozenset({'a: desktop'})
+0.010401627961335919,frozenset({'a: internationalization'})
+0.01001663710486876,frozenset({'a: quality'})
+0.027808714543029602,frozenset({'a: tests'})
+0.03481417316338737,frozenset({'a: text input'})
+0.06577156292538053,frozenset({'autosubmit'})
+0.034181688184905606,frozenset({'c: crash'})
+0.011185359347715492,frozenset({'c: flake'})
+0.04758074495730726,frozenset({'c: new feature'})
+0.014870271831044012,frozenset({'c: performance'})
+0.03414731400129247,frozenset({'c: proposal'})
+0.016355236563131627,frozenset({'c: regression'})
+0.011694097265189952,frozenset({'c: tech-debt'})
+0.019978275515956496,frozenset({'d: api docs'})
+0.01306906460971552,frozenset({'d: examples'})
+0.011309106408722793,frozenset({'dependency: dart'})
+0.107824939157695,frozenset({'engine'})
+0.12605700614610402,frozenset({'engine-flutter-autoroll'})
+0.01812206960084698,frozenset({'f: cupertino'})
+0.0849798567284027,frozenset({'f: material design'})
+0.021030125534518555,frozenset({'f: scrolling'})
+0.010216007369824967,frozenset({'fluttergithubbot'})
+0.19666157928749192,frozenset({'framework'})
+0.011137235490657097,frozenset({'goderbauer'})
+0.059652958242241746,frozenset({'has reproducible steps'})
+0.03952343631838744,frozenset({'in triage'})
+0.013694674751474652,frozenset({'jmagman'})
+0.025925009281029577,frozenset({'jonahwilliams'})
+0.04978069270854817,frozenset({'package'})
+0.0351922891831319,frozenset({'platform-android'})
+0.041152772621650235,frozenset({'platform-ios'})
+0.029493049540073424,frozenset({'platform-web'})
+0.010600998226292126,frozenset({'platform-windows'})
+0.03446355649053335,frozenset({'r: duplicate'})
+0.029651170784693863,frozenset({'r: fixed'})
+0.04488580896203715,frozenset({'r: invalid'})
+0.015062767259277592,frozenset({'r: solved'})
+0.013502179323241072,frozenset({'r: timeout'})
+0.06439659558085495,frozenset({'team'})
+0.01023663187999285,frozenset({'team-android'})
+0.0159289966863287,frozenset({'team-design'})
+0.01828019084546742,frozenset({'team-engine'})
+0.01678147643993455,frozenset({'team-framework'})
+0.032318607433073465,frozenset({'team-infra'})
+0.010862242021751983,frozenset({'team-tool'})
+0.11062987254052717,frozenset({'tool'})
+0.014952769871715546,frozenset({'triaged-design'})
+0.015750250931540376,frozenset({'triaged-engine'})
+0.015605879360365192,frozenset({'triaged-framework'})
+0.010161008676043944,frozenset({'waiting for PR to land (fixed)'})
+0.04149651445778163,frozenset({'waiting for customer response'})
+0.02855119690907341,"frozenset({'engine', 'P2'})"
+0.029135558030496774,"frozenset({'framework', 'P2'})"
+0.028303702787058807,"frozenset({'has reproducible steps', 'P2'})"
+0.013247810364503843,"frozenset({'package', 'P2'})"
+0.011735346285525718,"frozenset({'platform-android', 'P2'})"
+0.010250381553438105,"frozenset({'platform-ios', 'P2'})"
+0.010023511941591387,"frozenset({'team-engine', 'P2'})"
+0.011205983857883375,"frozenset({'tool', 'P2'})"
+0.018142694111014865,"frozenset({'c: new feature', 'P3'})"
+0.014533404831635248,"frozenset({'P3', 'c: proposal'})"
+0.013536553506854213,"frozenset({'framework', 'P3'})"
+0.010002887431423503,"frozenset({'P3', 'package'})"
+0.015997745053554977,"frozenset({'framework', 'a: tests'})"
+0.015392759421963728,"frozenset({'f: material design', 'a: text input'})"
+0.027430598523285072,"frozenset({'framework', 'a: text input'})"
+0.017537708479423614,"frozenset({'autosubmit', 'engine'})"
+0.03535041042775234,"frozenset({'engine-flutter-autoroll', 'autosubmit'})"
+0.014945895034992919,"frozenset({'autosubmit', 'framework'})"
+0.011398479286116954,"frozenset({'tool', 'c: crash'})"
+0.01977890525100029,"frozenset({'c: new feature', 'c: proposal'})"
+0.022611337980722956,"frozenset({'c: new feature', 'framework'})"
+0.017977698029671797,"frozenset({'framework', 'c: proposal'})"
+0.014354659076846925,"frozenset({'d: api docs', 'framework'})"
+0.02674311485102229,"frozenset({'engine-flutter-autoroll', 'engine'})"
+0.012869694344759312,"frozenset({'framework', 'engine'})"
+0.012787196304087778,"frozenset({'has reproducible steps', 'engine'})"
+0.010628497573182637,"frozenset({'platform-android', 'engine'})"
+0.01039475312461329,"frozenset({'engine', 'platform-ios'})"
+0.014389033260460064,"frozenset({'engine', 'team-engine'})"
+0.013220311017613331,"frozenset({'triaged-engine', 'engine'})"
+0.01678147643993455,"frozenset({'framework', 'f: cupertino'})"
+0.08139119195919096,"frozenset({'framework', 'f: material design'})"
+0.01557838001347468,"frozenset({'f: material design', 'has reproducible steps'})"
+0.01354342834357684,"frozenset({'f: material design', 'team-design'})"
+0.012766571793919894,"frozenset({'triaged-design', 'f: material design'})"
+0.01990952714873022,"frozenset({'framework', 'f: scrolling'})"
+0.03327420973751873,"frozenset({'framework', 'has reproducible steps'})"
+0.011810969489474625,"frozenset({'framework', 'r: fixed'})"
+0.01678147643993455,"frozenset({'framework', 'team'})"
+0.015262137524233799,"frozenset({'framework', 'team-design'})"
+0.016038994073890745,"frozenset({'framework', 'team-framework'})"
+0.01446465646440897,"frozenset({'triaged-design', 'framework'})"
+0.015152140136671753,"frozenset({'framework', 'triaged-framework'})"
+0.014588403525416271,"frozenset({'has reproducible steps', 'r: fixed'})"
+0.020012649699569635,"frozenset({'waiting for customer response', 'in triage'})"
+0.014340909403401669,"frozenset({'tool', 'jonahwilliams'})"
+0.012374706100730107,"frozenset({'tool', 'platform-ios'})"
+0.014890896341211896,"frozenset({'tool', 'team'})"
+0.014945895034992919,"frozenset({'triaged-design', 'team-design'})"
+0.015743376094817747,"frozenset({'triaged-engine', 'team-engine'})"
+0.015599004523642563,"frozenset({'triaged-framework', 'team-framework'})"
+0.014739649933314085,"frozenset({'framework', 'has reproducible steps', 'P2'})"
+0.014945895034992919,"frozenset({'framework', 'a: text input', 'f: material design'})"
+0.016994596378336016,"frozenset({'engine-flutter-autoroll', 'engine', 'autosubmit'})"
+0.010470376328562197,"frozenset({'c: new feature', 'framework', 'c: proposal'})"
+0.013213436180890704,"frozenset({'triaged-engine', 'engine', 'team-engine'})"
+0.015269012360956428,"frozenset({'framework', 'has reproducible steps', 'f: material design'})"
+0.013117188466773915,"frozenset({'framework', 'team-design', 'f: material design'})"
+0.012443454467956387,"frozenset({'triaged-design', 'f: material design', 'framework'})"
+0.012759696957197267,"frozenset({'triaged-design', 'team-design', 'f: material design'})"
+0.014457781627686343,"frozenset({'triaged-design', 'team-design', 'framework'})"
+0.015145265299949126,"frozenset({'framework', 'triaged-framework', 'team-framework'})"
+0.012436579631233758,"frozenset({'triaged-design', 'team-design', 'f: material design', 'framework'})"

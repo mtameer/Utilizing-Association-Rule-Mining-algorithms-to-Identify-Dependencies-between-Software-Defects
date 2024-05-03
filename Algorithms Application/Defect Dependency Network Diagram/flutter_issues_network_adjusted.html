@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 100%;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "black"}, "id": 146337, "label": "146337", "shape": "dot", "title": "We found that in some win7 system to open the problem of black screen, timely use the official generation of the simplest demo"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146336, "label": "146336", "shape": "dot", "title": "flutter web does not adapt to screen size"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146335, "label": "146335", "shape": "dot", "title": "form reset() function gives null pointer for a dropdownmenu with onChange=null"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146334, "label": "146334", "shape": "dot", "title": "[Feature Request] Ability to delay build until layout phase is completed"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146333, "label": "146333", "shape": "dot", "title": "[tool_crash] FileSystemException: Cannot open file, OS Error: No such file or directory, errno = 2"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146332, "label": "146332", "shape": "dot", "title": "MenuAnchor based menu with SubmenuButton children cannot be exited by keyboard traversal (works fine with MenuItemButton)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146331, "label": "146331", "shape": "dot", "title": "Roll pub packages"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146330, "label": "146330", "shape": "dot", "title": "Roll Flutter Engine from 23a1d0d2fce6 to 292c48b9af5e (1 revision)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146329, "label": "146329", "shape": "dot", "title": "gradleVersion variable not found after gradle migration"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146328, "label": "146328", "shape": "dot", "title": "Window Size Classes in Flutter"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146327, "label": "146327", "shape": "dot", "title": "Roll Flutter Engine from 597d33f57183 to 23a1d0d2fce6 (1 revision)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146326, "label": "146326", "shape": "dot", "title": "Uncategorized (Xcode): Exited with status code 1"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146325, "label": "146325", "shape": "dot", "title": "Roll Flutter Engine from 1fa0623bb07f to 597d33f57183 (1 revision)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146324, "label": "146324", "shape": "dot", "title": "Roll Flutter Engine from f17d586de6f1 to 1fa0623bb07f (1 revision)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146323, "label": "146323", "shape": "dot", "title": "[image_picker] pickMedia() not picking either image/video in android 14"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146322, "label": "146322", "shape": "dot", "title": "Roll Flutter Engine from d44462a42d73 to f17d586de6f1 (4 revisions)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146321, "label": "146321", "shape": "dot", "title": "Roll Flutter Engine from d44462a42d73 to c28192426797 (3 revisions)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146320, "label": "146320", "shape": "dot", "title": "[cp] update engine version"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146319, "label": "146319", "shape": "dot", "title": "Hot reload and hot restart is not update app after changes in code"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146318, "label": "146318", "shape": "dot", "title": "OnPreDraw return false false io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$2@b5f1a7c"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146317, "label": "146317", "shape": "dot", "title": "Roll Flutter Engine from d44462a42d73 to c59074f2569a (2 revisions)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146316, "label": "146316", "shape": "dot", "title": "Roll Flutter Engine from d44462a42d73 to 7feef43d2c03 (1 revision)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146315, "label": "146315", "shape": "dot", "title": "When popping a route inside shellroute to one outside it doesn\u0027t return value"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146314, "label": "146314", "shape": "dot", "title": "Widgets are looking buggy on Web"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146313, "label": "146313", "shape": "dot", "title": "Roll Flutter Engine from d44462a42d73 to 7feef43d2c03 (1 revision)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146312, "label": "146312", "shape": "dot", "title": "[cp] update engine version"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146311, "label": "146311", "shape": "dot", "title": "Roll Flutter Engine from dcc99d652154 to d44462a42d73 (1 revision)"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146310, "label": "146310", "shape": "dot", "title": "Bump codecov/codecov-action from 4.1.1 to 4.2.0"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146309, "label": "146309", "shape": "dot", "title": "[cp] update engine version"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": 146308, "label": "146308", "shape": "dot", "title": "Roll Flutter Engine from e3104af94328 to dcc99d652154 (4 revisions)"}]);
+                  edges = new vis.DataSet([{"from": 146336, "to": 146333}, {"from": 146336, "to": 146328}, {"from": 146335, "to": 146332}, {"from": 146335, "to": 146315}, {"from": 146334, "to": 146329}, {"from": 146334, "to": 146326}, {"from": 146334, "to": 146323}, {"from": 146334, "to": 146319}, {"from": 146334, "to": 146318}, {"from": 146334, "to": 146314}, {"from": 146333, "to": 146328}, {"from": 146332, "to": 146315}, {"from": 146331, "to": 146330}, {"from": 146331, "to": 146327}, {"from": 146331, "to": 146325}, {"from": 146331, "to": 146324}, {"from": 146331, "to": 146322}, {"from": 146331, "to": 146320}, {"from": 146331, "to": 146312}, {"from": 146331, "to": 146311}, {"from": 146331, "to": 146310}, {"from": 146331, "to": 146309}, {"from": 146331, "to": 146308}, {"from": 146330, "to": 146327}, {"from": 146330, "to": 146325}, {"from": 146330, "to": 146324}, {"from": 146330, "to": 146322}, {"from": 146330, "to": 146321}, {"from": 146330, "to": 146320}, {"from": 146330, "to": 146317}, {"from": 146330, "to": 146316}, {"from": 146330, "to": 146313}, {"from": 146330, "to": 146312}, {"from": 146330, "to": 146311}, {"from": 146330, "to": 146310}, {"from": 146330, "to": 146309}, {"from": 146330, "to": 146308}, {"from": 146329, "to": 146326}, {"from": 146329, "to": 146323}, {"from": 146329, "to": 146319}, {"from": 146329, "to": 146318}, {"from": 146329, "to": 146314}, {"from": 146327, "to": 146325}, {"from": 146327, "to": 146324}, {"from": 146327, "to": 146322}, {"from": 146327, "to": 146321}, {"from": 146327, "to": 146320}, {"from": 146327, "to": 146317}, {"from": 146327, "to": 146316}, {"from": 146327, "to": 146313}, {"from": 146327, "to": 146312}, {"from": 146327, "to": 146311}, {"from": 146327, "to": 146310}, {"from": 146327, "to": 146309}, {"from": 146327, "to": 146308}, {"from": 146326, "to": 146323}, {"from": 146326, "to": 146319}, {"from": 146326, "to": 146318}, {"from": 146326, "to": 146314}, {"from": 146325, "to": 146324}, {"from": 146325, "to": 146322}, {"from": 146325, "to": 146321}, {"from": 146325, "to": 146320}, {"from": 146325, "to": 146317}, {"from": 146325, "to": 146316}, {"from": 146325, "to": 146313}, {"from": 146325, "to": 146312}, {"from": 146325, "to": 146311}, {"from": 146325, "to": 146310}, {"from": 146325, "to": 146309}, {"from": 146325, "to": 146308}, {"from": 146324, "to": 146322}, {"from": 146324, "to": 146321}, {"from": 146324, "to": 146320}, {"from": 146324, "to": 146317}, {"from": 146324, "to": 146316}, {"from": 146324, "to": 146313}, {"from": 146324, "to": 146312}, {"from": 146324, "to": 146311}, {"from": 146324, "to": 146310}, {"from": 146324, "to": 146309}, {"from": 146324, "to": 146308}, {"from": 146323, "to": 146319}, {"from": 146323, "to": 146318}, {"from": 146323, "to": 146314}, {"from": 146322, "to": 146321}, {"from": 146322, "to": 146320}, {"from": 146322, "to": 146317}, {"from": 146322, "to": 146316}, {"from": 146322, "to": 146313}, {"from": 146322, "to": 146312}, {"from": 146322, "to": 146311}, {"from": 146322, "to": 146310}, {"from": 146322, "to": 146309}, {"from": 146322, "to": 146308}, {"from": 146321, "to": 146320}, {"from": 146321, "to": 146317}, {"from": 146321, "to": 146316}, {"from": 146321, "to": 146313}, {"from": 146321, "to": 146312}, {"from": 146321, "to": 146311}, {"from": 146321, "to": 146309}, {"from": 146321, "to": 146308}, {"from": 146320, "to": 146317}, {"from": 146320, "to": 146316}, {"from": 146320, "to": 146313}, {"from": 146320, "to": 146312}, {"from": 146320, "to": 146311}, {"from": 146320, "to": 146310}, {"from": 146320, "to": 146309}, {"from": 146320, "to": 146308}, {"from": 146319, "to": 146318}, {"from": 146319, "to": 146314}, {"from": 146318, "to": 146314}, {"from": 146317, "to": 146316}, {"from": 146317, "to": 146313}, {"from": 146317, "to": 146312}, {"from": 146317, "to": 146311}, {"from": 146317, "to": 146309}, {"from": 146317, "to": 146308}, {"from": 146316, "to": 146313}, {"from": 146316, "to": 146312}, {"from": 146316, "to": 146311}, {"from": 146316, "to": 146309}, {"from": 146316, "to": 146308}, {"from": 146313, "to": 146312}, {"from": 146313, "to": 146311}, {"from": 146313, "to": 146309}, {"from": 146313, "to": 146308}, {"from": 146312, "to": 146311}, {"from": 146312, "to": 146310}, {"from": 146312, "to": 146309}, {"from": 146312, "to": 146308}, {"from": 146311, "to": 146310}, {"from": 146311, "to": 146309}, {"from": 146311, "to": 146308}, {"from": 146310, "to": 146309}, {"from": 146310, "to": 146308}, {"from": 146309, "to": 146308}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"size": 20, "font": {"size": 16}, "shape": "dot"}, "physics": {"barnesHut": {"gravitationalConstant": -80000, "centralGravity": 0.3, "springLength": 200}, "minVelocity": 0.75}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
